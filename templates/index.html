@@ -1,10 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-      <meta charset="UTF-8">
-      <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Elysa Mester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E6E6FA; /* lilás claro */
+            color: #4B0082; /* índigo */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4B0082; /* índigo */
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px 60px; /* Adiciona padding superior para o cabeçalho fixo e inferior para o rodapé */
+        }
+        .intro {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #6A5ACD; /* lilás escuro */
+        }
+        .menu {
+            margin: 20px 0;
+        }
+        .menu input[type="checkbox"] {
+            display: none;
+        }
+        .menu label {
+            background-color: #4B0082; /* índigo */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .menu label:hover {
+            background-color: #3A0063; /* um pouco mais escuro */
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            max-width: 800px;
+            text-align: left;
+        }
+        .menu input:checked + label {
+            background-color: #3A0063; /* um pouco mais escuro */
+        }
+        .menu input:checked + label + .content {
+            display: block;
+        }
+        footer {
+            background-color: #4B0082; /* índigo */
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: #FFD700; /* dourado */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-      <h1>Minha página pessoal</h1>
+    <header>
+        <h1>Elysa Mester</h1>
+    </header>
+
+    <div class="container">
+        <p class="intro">Olá! Muito prazer, espero que esteja bem. Seja bem-vindo ao meu site.</p>
+
+        <div class="menu">
+            <input type="checkbox" id="hobbies" />
+            <label for="hobbies">Hobbies</label>
+            <div class="content">
+                <h2>Meus Hobbies</h2>
+                <p>Eu gosto muito de música,dança,cozinha,volei etc</p>
+                <img src="https://i.pinimg.com/564x/6b/1c/da/6b1cda88c78085d2850074ae5aefe399.jpg" alt="">
+            </div>
+
+            <input type="checkbox" id="family" />
+            <label for="family">Família</label>
+            <div class="content">
+                <h2>Minha Família</h2>
+                <p>Atualmente moro com meus pais e 2 irmãos mais novos: pedro (3) e mateus (11)</p>
+
+            </div>
+
+            <input type="checkbox" id="friends" />
+            <label for="friends">Amigos</label>
+            <div class="content">
+                <h2>Meus Amigos</h2>
+                <p>Minhas amigas são as melhores, estão sempre me apoiando
+                    e me ajudando mas quando preciso me dao esporro sempre</p>
+            </div>
+
+            <input type="checkbox" id="religion" />
+            <label for="religion">Religião</label>
+            <div class="content">
+                <h2>Minha Religião</h2>
+                <p>Eu sou evangélica, mas não sou apegada a religião, mas sou apegada a Jesus, creio que Ele é o único caminho,verdade e a vida </p>
+                <img src="https://i.pinimg.com/736x/b8/cb/ce/b8cbce46476ad85590f7f66295d1ce92.jpg" alt="">
+            </div>
+
+            <input type="checkbox" id="future" />
+            <label for="future">Futuro</label>
+            <div class="content">
+                <h2>Meu Futuro</h2>
+                <p>Atualmente penso em continuar na área de tecnologia, me formar
+                    e depois que estiver estável economicamente ir para área de gastronomia</p>
+                <img src="https://i.pinimg.com/564x/63/1c/79/631c79fb0809281dec04d4d952e27059.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contato: <a href="mailto:seuemail@example.com">mesterelysa@gmail.com</a> | Telefone: (11) 91123-1865</p>
+        <p><a href="https://github.com/elysamester" target="_blank">Meu GitHub</a></p>
+    </footer>
 </body>
 </html>
